@@ -2,6 +2,7 @@ package model;
 
 public class RacingCar {
     String carName;
+    int cnt;
 
 
     public String getCarName() {
