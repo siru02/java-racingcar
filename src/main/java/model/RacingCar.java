@@ -1,15 +1,24 @@
 package model;
 
+import java.util.List;
+
 public class RacingCar {
-    String carName;
-    int cnt;
+    private static String carName;
+    private final int position;
+    private int cnt;
+
+    private RacingCar(final String name, final int position) {
+        this.carName = name;
+        this.position = position;
+    }
 
 
-    public String getCarName() {
+    public String getName() {
         return carName;
     }
 
-    public void setCarName(String carName) {
-        this.carName = carName;
+    public int getPosition() {
+        return position;
     }
+
 }
