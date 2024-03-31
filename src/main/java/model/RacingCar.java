@@ -34,7 +34,8 @@ public class RacingCar {
         return position;
     }
 
-    public static Object from(String s) {
+    public static RacingCar from(String s) {
+        return new RacingCar(s, 0);
     }
 
     public void move(final int number) {
