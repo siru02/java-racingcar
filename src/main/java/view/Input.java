@@ -12,12 +12,12 @@ public class Input {
     private static Scanner scanner = new Scanner(System.in);
     String  inputString;
     String  inputStringSplit[];
-    List <String> carNameInput(){
+    public static List <String> carNameInput(){
         System.out.println(CAR_INPUT);
         inputString = scanner.nextLine();
         return (util.splitByDelemeter(inputString, ","));
     }
-    int playTimeInput() {
+    public static int playTimeInput() {
         try {
             System.out.println(TRY_CNT);
             String input = scanner.nextLine();
